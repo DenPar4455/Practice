@@ -1,7 +1,83 @@
-body{
-    background-color: aqua;
-}
-
 #cityField {
     background-color: yellow;
+}
+body{
+    background-color: rgb(255, 253, 241);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#header-banner{
+    background-color: #ffe4c4;
+}
+#title{
+    background-color: #ffe4c4;
+    text-align: center;
+}
+hr{
+    margin: 0;
+    border: 0;
+    height: 2px;
+    background-color: white;
+}
+h1{
+    color: chocolate;
+    display: inline-block;
+    margin: 10px;
+}
+#clothes-options{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.link-header{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: chocolate;
+}
+.link-header:hover{
+    color: rgb(165, 84, 26);
+}
+#container{
+    padding: 20px;
+}
+fieldset{
+    border: 0;
+    margin-top: 20px;
+}
+#show-products{
+    display: inline-block;
+    border: 1px solid red;
+    width: 70%;
+}
+.product{
+    display: inline-block;
+    width: 250px;
+    border: 1px solid red;
+    border-radius: 40px;
+    text-align: center;
+    margin: 10px;
+    padding: 2rem;
+    background-color: rgb(248, 243, 215);
+
+}
+.shirt-img{
+    width: 100%;
+    max-height: auto;
+    border: 1px solid blue;
+    background-color: rgb(180, 55, 82);
+
+}
+button{
+    border-radius: 5px;
+    
+}
+#list{
+    background-color: blanchedalmond;
+    display: inline-block;
+    border: 1px solid red;
+    width: 200px;
+    min-height: 500px;
+    padding-left: 5px;
 }
