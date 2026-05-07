@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 #cityField {
     background-color: yellow;
 }
@@ -5,6 +8,7 @@ body{
     background-color: rgb(255, 253, 241);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    padding: 20px;
 }
 #header-banner{
     background-color: #ffe4c4;
@@ -41,15 +45,20 @@ h1{
 }
 #container{
     padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid red;
+    display: flex;
 }
 fieldset{
     border: 0;
     margin-top: 20px;
 }
 #show-products{
-    display: inline-block;
-    border: 1px solid red;
-    width: 70%;
+    display: block;
+    border: 1px solid blue;
+    width: 80%;
+    min-width: 550px;
 }
 .product{
     display: inline-block;
@@ -67,17 +76,16 @@ fieldset{
     max-height: auto;
     border: 1px solid blue;
     background-color: rgb(180, 55, 82);
-
 }
 button{
     border-radius: 5px;
-    
 }
 #list{
     background-color: blanchedalmond;
-    display: inline-block;
+    display: block;
     border: 1px solid red;
-    width: 200px;
+    width: 20%;
+    max-width: 200px;
     min-height: 500px;
     padding-left: 5px;
 }
