@@ -1,91 +1,136 @@
 *{
     box-sizing: border-box;
 }
-#cityField {
-    background-color: yellow;
-}
 body{
     background-color: rgb(255, 253, 241);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 20px;
 }
-#header-banner{
-    background-color: #ffe4c4;
-}
-#title{
-    background-color: #ffe4c4;
-    text-align: center;
-}
 hr{
     margin: 0;
     border: 0;
     height: 2px;
-    background-color: white;
+    background-color: rgba(255, 253, 241);
 }
 h1{
     color: chocolate;
     display: inline-block;
     margin: 10px;
 }
-#clothes-options{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-.link-header{
-    margin-left: 20px;
-    margin-right: 20px;
-    text-decoration: none;
-    font-weight: 600;
-    color: chocolate;
-}
-.link-header:hover{
-    color: rgb(165, 84, 26);
-}
-#container{
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid red;
-    display: flex;
+button{
+    cursor: pointer;
 }
 fieldset{
     border: 0;
     margin-top: 20px;
 }
-#show-products{
-    display: block;
-    border: 1px solid blue;
-    width: 80%;
-    min-width: 550px;
+.flex{
+    display: flex;
+}
+.nav-links{
+    color: chocolate;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.nav-links:hover{
+    color: rgb(165, 84, 26);
 }
 .product{
     display: inline-block;
-    width: 250px;
-    border: 1px solid red;
-    border-radius: 40px;
-    text-align: center;
-    margin: 10px;
-    padding: 2rem;
     background-color: rgb(248, 243, 215);
-
+    border-radius: 40px;
+    margin: 10px;
+    max-width: 250px;
+    min-width: 230px;
+    padding: 2rem;
+    text-align: center;
+    width: 20%;
 }
 .shirt-img{
-    width: 100%;
-    max-height: auto;
-    border: 1px solid blue;
     background-color: rgb(180, 55, 82);
+    max-height: auto;
+    width: 100%;
 }
-button{
+.product-description{
+    width: 100%;
+}
+.add{
+    background-color: blue;
     border-radius: 5px;
+    border-width: 0;
+    color: aquamarine;
+    height: 20px;
+    width: 100px;
+    transition: transform 0.3s ease;
 }
-#list{
+.add:hover{
+    background-color: lightblue;
+    color: darkblue;
+    transform: translateY(-5px);
+}
+#choices{
     background-color: blanchedalmond;
     display: block;
-    border: 1px solid red;
-    width: 20%;
-    max-width: 200px;
-    min-height: 500px;
     padding-left: 5px;
+    max-height: 500px;
+    max-width: 200px;
+    min-width: 100px;
+    width: 20%;
+}#header-banner{
+    background-color: #ffe4c4;
+}
+#title{
+    background-color: #ffe4c4;
+    text-align: center;
+}
+#search-line{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+#search-bar{
+    display: inline-block;
+    border-radius: 20px;
+    border-width: 0;
+    height: 40px;
+    font-size: 1em;
+    margin: 10px;
+    padding-left: 40px;
+    width: 100%;
+}
+#search-button{
+    display: inline;
+    border-radius: 100%;
+    height: 2rem;
+    position: absolute;
+    right: 5%;
+    width: 2rem;
+}
+#banner{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+#links{
+    margin-left: 50;
+}
+#cart{
+    display: inline-block;
+    position: absolute;
+    right: 15%;
+}
+#container{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+#show-products{
+    display: block;
+    min-width: 550px;
+    width: 80%;
 }
