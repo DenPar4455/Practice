@@ -18,6 +18,12 @@ body {
     background-color: var(--color-1, black);
     margin: 0;
 }
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 a {
     display: inline-block;
     background-color: lightblue;
@@ -26,11 +32,7 @@ a {
     text-align: center;
     font-size: large;
 }
-nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-}
+
 #header, section{
     padding-left: 20px;
     padding-right: 20px;
@@ -132,8 +134,9 @@ h3{
 }
 .separator{
     grid-area: separator;
-    border: 1.5px solid black;
+    background-color: var(--color-3);
     margin: 10px;
+    height: 3px;
 }
 #details-area{
     grid-area: details;
